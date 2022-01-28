@@ -3,23 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ConnectToServer : MonoBehaviourPunCallbacks
 {
-    // Start is called before the first frame update
-    private void Start()
-    {
-        PhotonNetwork.ConnectUsingSettings();
-    }
+    public InputField usernameInput;
+    //public Text buttonText;
 
+    public void OnClickConnect()
+    {
+        if (usernameInput.text.Length >= 4)
+        {
+            PhotonNetwork.NickName = usernameInput.text;
+            //buttonText.text = "Conectando...";
+            PhotonNetwork.AutomaticallySyncScene = true;
+            PhotonNetwork.ConnectUsingSettings();
+        }
+    }
+    
     // Update is called once per frame
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.JoinLobby();
-    }
-
-    public override void OnJoinedLobby()
-    {
         SceneManager.LoadScene("LobbyScene");
     }
+
+  
 }

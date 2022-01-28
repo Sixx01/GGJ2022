@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     PhotonView view;
 
+    private const float speed = 10f;
+
     private void Start()
     {
         view = GetComponent<PhotonView>();
@@ -16,8 +18,20 @@ public class PlayerMovement : MonoBehaviour
     {
         if (view.IsMine)
         {
-            transform.Translate(Input.GetAxis("Horizontal") * 5f * Time.deltaTime,
-                                Input.GetAxis("Vertical") * 5f * Time.deltaTime, 0f);
+            Vector2 moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+
+            // no vibration:
+            Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
+            rigidbody.MovePosition(rigidbody.position + moveDirection * speed * Time.deltaTime);
         }
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            //Physics.IgnoreLayerCollision(collision.collider, false);
+        }
+
     }
 }

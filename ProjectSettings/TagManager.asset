@@ -13,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Room
   - 
   - 
   - 
@@ -40,6 +40,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Canvas
+    uniqueID: 34753949
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 3896463285
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3753941455
+    locked: 0
+  - name: Object
+    uniqueID: 2059675929
+    locked: 0
+  - name: Player
+    uniqueID: 871376317
     locked: 0
