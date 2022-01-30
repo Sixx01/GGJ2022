@@ -10,9 +10,9 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     public float smoothTime = .5f;
 
-    public float minZoom = 40f;
-    public float maxZoom = 10f;
-    public float zoomLimiter = 50f;
+    public float minZoom;
+    public float maxZoom;
+    public float zoomLimiter;
 
     private Vector3 velocity;
     private Camera cam;
@@ -27,14 +27,16 @@ public class CameraFollow : MonoBehaviour
     {
         if (targets.Count == 0)
             return;
-        Move();
-        Zoom();
+        
+            Move();
+            Zoom();
+
         
     }
     void Zoom()
     {
-        //Debug.Log(GetGreatestDistance());
-        float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance()/ zoomLimiter);
+         //Debug.Log(GetGreatestDistance());
+        float newZoom = Mathf.Lerp(maxZoom, minZoom, GetGreatestDistance() / zoomLimiter); 
         cam.fieldOfView = Mathf.Lerp(cam.fieldOfView, newZoom, Time.deltaTime);
     
     }

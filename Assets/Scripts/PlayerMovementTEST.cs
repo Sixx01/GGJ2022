@@ -5,7 +5,14 @@ using Photon.Pun;
 
 public class PlayerMovementTEST : MonoBehaviour
 {
-    private const float speed = 10f;
+    private const float moveSpeed = 5f;
+
+    public Rigidbody2D rb;
+    public Animator animator;
+
+
+    Vector2 movement;
+
 
     private void Start()
     {
@@ -15,17 +22,19 @@ public class PlayerMovementTEST : MonoBehaviour
     void Update()
 
     {
+        movement.x = Input.GetAxis("HorizontalWASD");
+        movement.y = Input.GetAxis("VerticalWASD");
 
-        Vector2 moveDirection = new Vector2(Input.GetAxis("HorizontalWASD"), Input.GetAxis("VerticalWASD"));
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
 
         
 
-        
+    }
 
-
-        // no vibration:
-        Rigidbody2D rigidbody = GetComponent<Rigidbody2D>();
-        rigidbody.MovePosition(rigidbody.position + moveDirection * speed * Time.deltaTime);
-
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 }

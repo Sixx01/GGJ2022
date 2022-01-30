@@ -5,26 +5,26 @@ using UnityEngine;
 public class PickUpp2 : MonoBehaviour
 {
 
-    private Inventory inventoryp2;
+    private Inventoryp2 inventoryp2;
     public GameObject itemButton;
 
     // Start is called before the first frame update
     private void Start()
     {
-        inventoryp2 = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();   
+        inventoryp2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Inventoryp2>();   
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player2"))
         {
-            for (int i = 0; i < inventoryp2.slots.Length; i++)
+            for (int i = 0; i < inventoryp2.slots2.Length; i++)
             {
-                if (inventoryp2.isFull[i] == false)
+                if (inventoryp2.isFull2[i] == false)
                 {
-                    inventoryp2.isFull[i] = true;
-                    Instantiate(itemButton, inventoryp2.slots[i].transform, false);
+                    inventoryp2.isFull2[i] = true;
+                    Instantiate(itemButton, inventoryp2.slots2[i].transform, false);
                     Destroy(gameObject);
                     break;
                 }

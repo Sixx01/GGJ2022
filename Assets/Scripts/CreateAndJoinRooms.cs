@@ -12,6 +12,7 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     public GameObject lobbyPanel;
     public GameObject roomPanel;
     public Text roomName;
+    public GameObject warningText;
 
     public RoomItem roomItemPrefab;
     List<RoomItem> roomItemsList = new List<RoomItem>();
@@ -36,6 +37,11 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
         if (roomInputField.text.Length >= 1)
         {
             PhotonNetwork.CreateRoom(roomInputField.text, new RoomOptions() { MaxPlayers = 2, BroadcastPropsChangeToAll = true });
+            warningText.SetActive(false);
+        }
+        else if (roomInputField.text.Length < 1)
+        {
+            warningText.SetActive(true);
         }
     }
     public override void OnJoinedRoom()

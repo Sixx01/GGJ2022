@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7742930894747171597}
   - component: {fileID: 7742930894747171596}
   - component: {fileID: 7742930894747171599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FLOWER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: -541025841
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: a73ed04a6097977418f9afde33fe41fd, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: a59769ef00577e04992c457ec9a34f21, type: 3}
   m_Color: {r: 0.3160377, g: 1, b: 0.3444302, a: 1}
   m_FlipX: 0
   m_FlipY: 0

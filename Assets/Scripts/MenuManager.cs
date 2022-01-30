@@ -5,27 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
+    public GameObject mainMenuPanel;
+    public GameObject creditsPanel;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-    /*
-    public void GameScene()
-    {
-        //Debug.Log("Cambio a escena de juego (desactivada)");
-        SceneManager.LoadScene(1);
-    }
-    */
     public void LoadScene(int scene)
     {
+        
         SceneManager.LoadScene(scene);
     }
 
@@ -33,5 +18,16 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Saliste el juego");
         Application.Quit();
+    }
+    public void Credits()
+    {
+        creditsPanel.SetActive(true);
+        mainMenuPanel.SetActive(false);
+    }
+
+    public void ReturnFromCredits()
+    {
+        creditsPanel.SetActive(false);
+        mainMenuPanel.SetActive(true);
     }
 }

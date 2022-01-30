@@ -5,10 +5,8 @@ using UnityEngine;
 public class Inventoryp2 : MonoBehaviour
 {
 
-    public bool[] isFull;
-    public GameObject[] slots;
-
-
+    public bool[] isFull2;
+    public GameObject[] slots2;
 
 
 }

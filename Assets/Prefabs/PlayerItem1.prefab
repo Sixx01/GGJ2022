@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106.20581, y: 0}
-  m_SizeDelta: {x: 52.4115, y: 30}
+  m_AnchoredPosition: {x: 242.21, y: -122}
+  m_SizeDelta: {x: 52.4115, y: 121.4549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8063360137488746385
 CanvasRenderer:
@@ -67,8 +67,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3542127132570728493, guid: 3c242f327fded6d40b5effa494b2fbd0, type: 3}
+  m_Sprite: {fileID: 8392042638940494123, guid: f3a3a639a7f47624bbdf77f963269f6a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -323,8 +323,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -106.72803, y: 0}
-  m_SizeDelta: {x: 53.456, y: 30}
+  m_AnchoredPosition: {x: -242.73, y: -122}
+  m_SizeDelta: {x: 53.456, y: 121.4549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5651141731481477247
 CanvasRenderer:
@@ -354,8 +354,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -533,7 +533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 152.75327}
+  m_AnchoredPosition: {x: 0, y: 285.68}
   m_SizeDelta: {x: 608.9535, y: 150.7627}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &633114803169907812
@@ -732,8 +732,8 @@ MonoBehaviour:
   rightArrowButton: {fileID: 2036231957399376203}
   playerAvatar: {fileID: 7496443152560463637}
   avatars:
-  - {fileID: 3542127132570728493, guid: 3c242f327fded6d40b5effa494b2fbd0, type: 3}
-  - {fileID: -5998797548565674896, guid: 4b22a9a83a8d2134ca3f46bbd698bcfa, type: 3}
+  - {fileID: 8392042638940494123, guid: f3a3a639a7f47624bbdf77f963269f6a, type: 3}
+  - {fileID: -447822619502976323, guid: aa2aac36f2925854789f00fa8c813a7b, type: 3}
 --- !u!222 &3217645164147763828
 CanvasRenderer:
   m_ObjectHideFlags: 0

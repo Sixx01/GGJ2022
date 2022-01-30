@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Undefined
   - Options
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Water
   - UI
   - Room
-  - 
+  - Obstacles
   - 
   - 
   - 
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 871376317
+    locked: 0
+  - name: Enemy
+    uniqueID: 4058543075
     locked: 0

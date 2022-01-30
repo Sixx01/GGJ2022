@@ -1085,7 +1085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7204227825712337718}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,7 +2297,7 @@ MonoBehaviour:
   - {x: -6, y: 6, z: 0}
   m_ShapePathHash: 1383565213
   m_Mesh: {fileID: 0}
-  m_InstanceId: 228264
+  m_InstanceId: 75162
 --- !u!1 &2609035999492583323
 GameObject:
   m_ObjectHideFlags: 0
@@ -2438,7 +2438,7 @@ MonoBehaviour:
   - {x: -6, y: 6, z: 0}
   m_ShapePathHash: 1383565213
   m_Mesh: {fileID: 0}
-  m_InstanceId: 227814
+  m_InstanceId: 74712
 --- !u!1 &2734914261193015440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2499,7 +2499,7 @@ MonoBehaviour:
   - {x: -6, y: 1, z: 0}
   m_ShapePathHash: -1897827995
   m_Mesh: {fileID: 0}
-  m_InstanceId: 227896
+  m_InstanceId: 74794
 --- !u!1 &2850976426535159473
 GameObject:
   m_ObjectHideFlags: 0
@@ -3785,7 +3785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2994728764203177527}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
