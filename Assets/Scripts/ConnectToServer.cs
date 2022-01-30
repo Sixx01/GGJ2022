@@ -9,11 +9,17 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     public InputField usernameInput;
     public GameObject warningText;
+    public GameObject backButton;
+    public GameObject connectButton;
+    public GameObject connectingImage;
 
     public void OnClickConnect()
     {
         if (usernameInput.text.Length >= 4)
         {
+            connectingImage.SetActive(true);
+            connectButton.SetActive(false);
+            backButton.SetActive(false);
             warningText.SetActive(false);
             PhotonNetwork.NickName = usernameInput.text;
             //buttonText.text = "Conectando...";

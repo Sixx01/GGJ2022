@@ -13,22 +13,27 @@ public class PlayerMovementTEST1 : MonoBehaviour
 
     Vector2 movement;
 
+    //borrar en caso de tronar
+    public PhotonView view;
+
 
     private void Start()
     {
-
+        //borrar en caso de tronar
+        view = GetComponent<PhotonView>();
     }
 
     void Update()
-
     {
-        movement.x = Input.GetAxis("HorizontalARROW");
-        movement.y = Input.GetAxis("VerticalARROW");
+        if (view.IsMine)
+        {
+            movement.x = Input.GetAxis("HorizontalARROW");
+            movement.y = Input.GetAxis("VerticalARROW");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
     }
 
     private void FixedUpdate()

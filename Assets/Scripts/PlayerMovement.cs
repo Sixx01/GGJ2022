@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (view.IsMine)
         {
-            Vector2 moveDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+            Vector2 moveDirection = new Vector2(Input.GetAxis("HorizontalWASD"), Input.GetAxis("HorizontalWASD"));
 
 
             // no vibration:

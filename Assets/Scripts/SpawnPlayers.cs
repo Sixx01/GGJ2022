@@ -41,8 +41,8 @@ public class SpawnPlayers : MonoBehaviour
 
 
 
-        PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity);
-
+        //PhotonNetwork.Instantiate(playerToSpawn.name, spawnPoint.position, Quaternion.identity);
+        
     }
     
 

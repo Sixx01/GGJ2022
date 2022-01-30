@@ -13,22 +13,28 @@ public class PlayerMovementTEST : MonoBehaviour
 
     Vector2 movement;
 
+    //borrar en caso de tronar
+    public PhotonView view;
+
 
     private void Start()
     {
-       
+        //borrar en caso de tronar
+        view = GetComponent<PhotonView>();
     }
 
     void Update()
-
     {
-        movement.x = Input.GetAxis("HorizontalWASD");
-        movement.y = Input.GetAxis("VerticalWASD");
+        //borrar en caso de tronar
+        if (view.IsMine)
+        {
+            movement.x = Input.GetAxis("HorizontalWASD");
+            movement.y = Input.GetAxis("VerticalWASD");
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
-
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
         
 
     }

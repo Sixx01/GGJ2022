@@ -5,6 +5,8 @@ using UnityEngine;
 public class UseItem : MonoBehaviour
 {
     public GameObject player;
+   
+    
 
     private bool candleIsActive;
 
@@ -14,11 +16,22 @@ public class UseItem : MonoBehaviour
         //candleIsActive = false;
         //candle.SetActive(candleIsActive);
     }
+    void Update()
+    {
+        if (Input.GetKeyDown("1"))
+        {
+            player.transform.GetChild(2).gameObject.SetActive(true);
+            Debug.Log("ACTIVATEEE!");
+            
+        }
+    }
 
-    // Update is called once per frame
     public void Activate()
     {
-        player.transform.GetChild(2).gameObject.SetActive(true);
+        Update();
+        //player.transform.GetChild(1).gameObject.SetActive(true);
+        //Debug.Log("ACTIVATEEE!");
+        Destroy(gameObject);
 
         //candleIsActive = true;
         //candle.SetActive(candleIsActive);

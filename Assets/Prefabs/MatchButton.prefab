@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4130759476025265526}
   - component: {fileID: -3570802668368492902}
   - component: {fileID: 3256991229985186801}
+  - component: {fileID: -7389770755086678588}
   m_Layer: 5
   m_Name: MatchButton
   m_TagString: Untagged
@@ -122,13 +123,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 526d51036c49f39409e500599699a544, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: -7389770755086678588}
+        m_TargetAssemblyTypeName: UseItem, Assembly-CSharp
+        m_MethodName: Activate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -160,3 +161,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 5040811663293884229, guid: 7f4cb590dc0723a41b369a40f8529228, type: 3}
+--- !u!114 &-7389770755086678588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179435339171769820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d51036c49f39409e500599699a544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5350702664910906974, guid: 98469f76d0ba29c4bba5015e284466e4, type: 3}
